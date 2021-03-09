@@ -1,4 +1,4 @@
-package arun.snyk.test.model;
+package arun.snyk.scan.model;
 
 public class Greeting {
 

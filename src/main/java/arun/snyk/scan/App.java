@@ -1,4 +1,4 @@
-package arun.snyk.test;
+package arun.snyk.scan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

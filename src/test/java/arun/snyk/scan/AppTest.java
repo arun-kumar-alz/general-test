@@ -1,4 +1,4 @@
-package arun.snyk.test;
+package arun.snyk.scan;
 
 import static org.junit.Assert.assertTrue;
 

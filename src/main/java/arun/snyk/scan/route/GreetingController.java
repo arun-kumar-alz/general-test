@@ -1,8 +1,8 @@
-package arun.snyk.test.route;
+package arun.snyk.scan.route;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import arun.snyk.test.model.Greeting;
+import arun.snyk.scan.model.Greeting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +19,9 @@ public class GreetingController {
 	@GetMapping("/greeting")
 	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
 		log.info("User input data "+name);
+		int i = 0;
+		int j = 34;
+		float n = j/i;
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 }
