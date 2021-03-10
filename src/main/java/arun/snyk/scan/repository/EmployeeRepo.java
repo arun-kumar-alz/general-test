@@ -16,6 +16,8 @@ public class EmployeeRepo {
         String sql = "select * from employee where employee_address = '"+address+"'";
         Connection c = dataSource.getConnection();
         ResultSet rs = c.prepareStatement(sql).executeQuery();
+        if(rs.first())
+            System.out.println("Hello world!");
         return rs;
     }
 }
